@@ -20,7 +20,7 @@ export default function Interval() {
   
   return (
     <div className="content">
-      <h3>Intervalo</h3>
+      <h2>Intervalo</h2>
       <button className="box" onClick={setrRandonInterval}>
         <p>{intervalInfo.name}</p>
         <span>{intervalInfo.sub}</span>

@@ -21,7 +21,7 @@ export default function Key() {
 
   return (
     <div className="content">
-      <h3>Tom</h3>
+      <h2>Tom</h2>
       <button className="box" onClick={setRandomKey}>
         <p>{keyInfo.abbreviation}</p>
         <span>{keyInfo.name}</span>
