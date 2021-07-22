@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
+
+import { keys } from "../../keysAndIntervals/index";
+
+const keysList = Object.entries(keys);
 
 export default function Key() {
+  const [keyInfo, setKeyInfo] = useState({});
+
+  const setRandomKey = useCallback(() => {
+    const randomIndex = Math.floor(Math.random() * keysList.length);
+    const key = keysList[randomIndex];
+
+    setKeyInfo({abbreviation: key[0], name: key[1]});
+    
+  }, []);
+
+  useEffect(() => {
+    setRandomKey();
+  }, [setRandomKey]);
+
   return (
-    <div className="key-container">
-      <div className="box">C</div>
-      <button onClick={() => console.log("teste")}>Generate</button>
+    <div className="content">
+      <h3>Tom</h3>
+      <button className="box" onClick={setRandomKey}>
+        <p>{keyInfo.abbreviation}</p>
+        <span>{keyInfo.name}</span>
+      </button>
     </div>
   );
 }
