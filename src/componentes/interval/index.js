@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
+
+import { intervals, intervalsType, intervalsNumberType } from "../../keysAndIntervals/index";
 
 export default function Interval() {
+  const [intervalInfo, setIntervalInfo] = useState({});
+
+  const setrRandonInterval = useCallback(() => {
+    const randomIndex = Math.floor(Math.random() * intervals.length);
+    const interval = intervals[randomIndex];
+
+    const subtitle = `${intervalsNumberType[interval[0]]} ${intervalsType[interval[1]]}`
+
+    setIntervalInfo({name: interval, sub: subtitle});
+  }, []);
+
+  useEffect(() => {
+    setrRandonInterval();
+  }, [setrRandonInterval]);
+  
   return (
     <div className="content">
-      <div className="box">C</div>
-      <button onClick={() => console.log("teste")}>Generate</button>
+      <h3>Intervalo</h3>
+      <button className="box" onClick={setrRandonInterval}>
+        <p>{intervalInfo.name}</p>
+        <span>{intervalInfo.sub}</span>
+      </button>
     </div>
   );
 }
