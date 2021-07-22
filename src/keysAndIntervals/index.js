@@ -1,5 +1,4 @@
 const intervals = [
-  "T",
   "2b",
   "2M",
   "2#",
@@ -16,9 +15,35 @@ const intervals = [
   "7M",
 ];
 
-const keys = ["C", "D", "E", "F", "G", "A", "B"];
+const intervalsType = {
+  M: "maior",
+  b: "menor",
+  '#': "aumentada",
+  J: "justa",
+}
+
+const intervalsNumberType = {
+  '2': 'Segunda',
+  '3': 'Terça',
+  '4': 'Quarta',
+  '5': 'Quinta',
+  '6': 'Sexta',
+  '7': 'Sétima',
+}
+
+const keys = {
+  C: "Dó" ,
+  D: "Ré" ,
+  E: "Mi" ,
+  F: "Fá" ,
+  G: "Sol" ,
+  A: "Lá" ,
+  B: "Si" ,
+};
 
 module.exports = {
   intervals,
+  intervalsType,
+  intervalsNumberType,
   keys,
 };
