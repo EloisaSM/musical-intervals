@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  place-items: center;
+
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); 
+  text-align: center;
+
+  font-family: 'B612', sans-serif;
+}
+
+
+button{
+  all: unset
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.container{
+  width: 1000px;
+}
+
+.container-content{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.content{
+  width: 35%;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+}
+
+.box{
+  width: 160px;
+  padding: 20px 50px;
+  cursor: pointer;
+  height: 390px;
+  background: aliceblue;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 2px 8px 1px rgba(119,119,119,0.75); 
+  box-shadow: 3px 2px 8px 1px rgba(119,119,119,0.75);
+}
+
+.box p{
+  font-size: 40px;
+  font-weight: bold;
+}
+
