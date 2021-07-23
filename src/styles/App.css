@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 *{
   margin: 0;
@@ -11,12 +11,13 @@ body{
   display: grid;
   place-content: center;
   place-items: center;
-
-  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  
-  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); 
   text-align: center;
 
-  font-family: 'B612', sans-serif;
+  color: rgba(0,0,0,.85);
+
+  background: #DCE1E3;
+
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -51,14 +52,21 @@ h1 {
   padding: 20px 50px;
   cursor: pointer;
   height: 390px;
-  background: aliceblue;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 2px 8px 1px rgba(119,119,119,0.75); 
-  box-shadow: 3px 2px 8px 1px rgba(119,119,119,0.75);
+
+  background: #fff;
+
+  box-shadow: 0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;
+  
 }
 
 .box p{
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
+  
+}
+
+span {
+  color: rgba(0,0,0,.68);
 }
 
