@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="container">
       <div className="title-icon">
-        <h1>Pratique intervalos! </h1>
         <img src={NoteIcon} alt="" />
       </div>
       <div className="container-content">
